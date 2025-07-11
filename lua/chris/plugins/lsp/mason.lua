@@ -2,7 +2,7 @@ return {
   "mason-org/mason.nvim",
   dependencies = {
     "mason-org/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim"
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
     -- import mason
@@ -31,12 +31,15 @@ return {
       },
     })
     mason_tool_installer.setup({
-            ensure_installed = {
-                "prettier",
-                "stylua",
-                "isort",
-                "black",
-            }
-        })
+      ensure_installed = {
+        "prettier",
+        "stylua",
+        "isort",
+        "black",
+        "pylint",
+        "cmakelint",
+        "cpplint",
+      },
+    })
   end,
 }
