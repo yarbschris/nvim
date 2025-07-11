@@ -2,7 +2,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt
 
-opt.relativenumber = false
+opt.relativenumber = true
 
 opt.number = true
 
@@ -25,7 +25,7 @@ opt.background = "dark" -- colorschemes that can be light or dark will be dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 --backspace
-opt.backspace= "indent,eol,start" -- allow backspace on indent, end of line, or start pos
+opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line, or start pos
 
 --clipboard
 opt.clipboard:append("unnamedplus") -- use system clipboard as default register
