@@ -47,8 +47,8 @@ keymap.set("n", "N", "Nzzzv")
 keymap.set("x", "<leader>p", '"_dP')
 
 -- Delete to void
-keymap.set("n", "<leader>d", '"_d')
-keymap.set("v", "<leader>d", '"_d')
+keymap.set("n", "<leader>nd", '"_d')
+keymap.set("v", "<leader>nd", '"_d')
 
 -- NO CAPITAL Q
 keymap.set("n", "Q", "<nop>")
